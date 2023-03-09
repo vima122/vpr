@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>541</width>
+    <height>535</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <widget class="QPushButton" name="startButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>500</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Следующее задание</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>0</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Времени осталось:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="timeChet">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>0</y>
+      <width>113</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="timerBar">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>351</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>429</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>521</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Прочитайте текст и вставьте вместо каждого пропуска нужную грамматическую форму, выбрав её
+ из выпадающего списка.
+
+The Rain Trick
+It was a hot day in summer. Tom felt thirsty and thought it A____ nice to have a glass of cold beer in a bar.
+ He found one and got in. He sat at one of the tables near the window and ordered a glass of beer.
+ All around him he saw a lot of people B____ their lunch. While Tom was drinking his beer,
+ he noticed that it had started C____ outside. And he D____ his umbrella at home. So he decided to take
+ a second glass of beer and wait till the rain stopped. The people in the bar did the same as they didn`t
+ want to go out into the rain. An hour passed, but there was no change in the weather. Tom could not wait
+ any longer. He left the bar and stopped in surprise. There was no rain at all. But in front of the bar a fat
+ woman was sitting. She E____ the pavement to make the people inside the bar believe that it was raining
+ hard in the street. In this way people inside were made to believe it and order more and more food.</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>290</y>
+      <width>501</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustIgnored</enum>
+    </property>
+    <property name="autoScroll">
+     <bool>true</bool>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>false</bool>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::NoPen</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <row>
+     <property name="text">
+      <string>Ответ</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>A</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>B</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>C</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>D</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>E</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>491</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QComboBox" name="comboBox">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <property name="duplicatesEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>is</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>will be</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>was</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>would be</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBox_2">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>have</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>has</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>are having</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>having</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBox_3">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>rain</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>rains</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>raining</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>rained</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBox_4">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>had left</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>left</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>has left</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>have left</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBox_5">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>waters</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>was watering</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>watered</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>has been</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

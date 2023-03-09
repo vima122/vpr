@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>541</width>
+    <height>535</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <widget class="QPushButton" name="startButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>500</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Следующее задание</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>0</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Времени осталось:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="timeChet">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>0</y>
+      <width>113</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="timerBar">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>351</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>429</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="audioLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>531</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Перед Вами 5 предложений A — E с пропусками и варианты слов или словосочетаний
+ для заполнения этих пропусков, обозначенные цифрами 1 — 3. Внимательно прочитайте их.
+Вы услышите диалог. Для каждого предложения A — E выберите
+ слово или словосочетание, соответствующее содержанию диалога.
+ К каждому пропуску подходит только одно слово или словосочетание. Вы услышите запись дважды. При повторном прослушивании проверьте себя.
+ У Вас есть 45 секунд, чтобы ознакомиться с предложениями.</string>
+    </property>
+   </widget>
+   <widget class="QSplitter" name="splitter_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>311</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Mark's class will go to the Museum of _________</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_2">
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sport</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>History</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Science</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>281</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>The lessons finish at _________ on Friday</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_3">
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2:20 pm</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2 pm</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2:30 pm</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>331</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Mark's class is meeting _________</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_4">
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>by the information board</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>opposite the entrance</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>next to the library</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>300</y>
+      <width>281</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>The ticket to the Museum costs _________.</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_5">
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>£8</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>£3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>£5</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>271</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Mark's project has good________</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>pictures</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>examples</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>facts</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
